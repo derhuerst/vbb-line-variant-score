@@ -21,6 +21,8 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"merged-vbb-stations": "^1.6.0",
+		"vbb-stations": "^6.4.1"
 	},
 	"devDependencies": {
 		"tap-min": "^1.2.2",
