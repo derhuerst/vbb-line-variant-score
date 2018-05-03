@@ -19,8 +19,22 @@ npm install vbb-line-variant-score
 ## Usage
 
 ```js
-todo
+const readLines = require('vbb-lines')
+
+readLines()
+.on('data', (line) => {
+	const computeLineVariantScore = create(line.variants)
+
+	for (let variant of line.variants) {
+		console.log(
+			computeLineVariantScore(variant),
+			variant
+		)
+	}
+})
 ```
+
+Most VBB lines have 1 "canonical" set of stations, hence 2 "canonical" variants. They will be the 2 variants with the highest score.
 
 
 ## Contributing
