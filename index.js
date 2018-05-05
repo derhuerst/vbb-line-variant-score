@@ -15,7 +15,7 @@ for (let origId in stations) {
 const create = (allVariants) => {
 	const stationCounts = Object.create(null)
 	for (let v of allVariants) {
-		for (let stop of v.stations) {
+		for (let stop of v.stops) {
 			const station = stationOf[stop]
 			if (!stationCounts[station]) stationCounts[station] = 1
 			else stationCounts[station]++
@@ -24,7 +24,7 @@ const create = (allVariants) => {
 
 	const computeLineVariantScore = (variant) => {
 		let score = 0
-		for (let stop of variant.stations) {
+		for (let stop of variant.stops) {
 			const station = stationOf[stop]
 			score += stationCounts[station]
 		}

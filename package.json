@@ -28,7 +28,7 @@
 		"hifo": "^1.0.0",
 		"tap-min": "^1.2.2",
 		"tape": "^4.8.0",
-		"vbb-lines": "^4.0.0-alpha.1"
+		"vbb-lines": "^4.0.0"
 	},
 	"scripts": {
 		"test": "env NODE_ENV=dev node test.js | tap-min",
